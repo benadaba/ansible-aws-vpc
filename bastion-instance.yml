@@ -38,6 +38,9 @@
             cidr_ip: "{{MYIP}}"
       register: BastionSG_out
 
+    - debug:
+        var: BastionSG_out
+
     # Create Jumpserver ( Bastion Host)
     - name: Creating Bastion Host
       ec2:
