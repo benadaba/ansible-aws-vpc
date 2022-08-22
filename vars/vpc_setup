@@ -22,3 +22,8 @@ zone2: eu-west-2b
 zone3: eu-west-2c
 
 state: present
+
+#bastion vars
+bastion_ami: ami-001c1821bbfc6dfd5
+
+MYIP: 80.47.147.92/32
