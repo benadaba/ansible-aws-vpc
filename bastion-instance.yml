@@ -63,6 +63,15 @@
         vpc_subnet_id: "{{pubsub1id}}"
       register: bastionHost_out
 
+    # use blackinfile to update an existing file
+    - name: Insert Update BastionSGid in varsvpc-output_vars
+      blockinfile:
+        path: vars/vpc-output_vars
+        backup: yes
+        block: |
+            BastionSGid: {{BastionSG_out.group_id}}
+
+
 
 
 
