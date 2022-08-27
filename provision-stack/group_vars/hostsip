@@ -3,5 +3,5 @@ web01_ip: 172.20.4.135
 app01_ip: 172.20.4.50
 rmq01_ip: 172.20.4.115
 mc01_ip: 172.20.4.121
-db01_ip: 172.20.4.90
+db01_ip: 172.20.4.38
 # END ANSIBLE MANAGED BLOCK
