@@ -115,7 +115,7 @@
         key_name: ubuntukey
         region: "{{region}}"
         instance_type: t2.micro
-        image: "{{memcach_ami}}"
+        image: "{{memcache_ami}}"
         wait: yes
         wait_timeout: 300
         instance_tags:
