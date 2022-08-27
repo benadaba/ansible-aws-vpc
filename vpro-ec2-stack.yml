@@ -107,7 +107,7 @@
           Owner: DevOps Team
         group_id: "{{vproStackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
-        register: app01_out
+      register: app01_out
 
 
     - name: Creating memcached mc01
@@ -129,7 +129,7 @@
           Owner: DevOps Team
         group_id: "{{vproStackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
-        register: mc01_out
+      register: mc01_out
 
 
     - name: Creating RabbitMQ rmq01
@@ -151,7 +151,7 @@
           Owner: DevOps Team
         group_id: "{{vproStackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
-        register: rmq01_out
+      register: rmq01_out
 
 
     - name: Creating MySql db01
@@ -173,7 +173,7 @@
           Owner: DevOps Team
         group_id: "{{vproStackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
-        register: db01_out
+      register: db01_out
 
     - debug:
         var: db01_out
