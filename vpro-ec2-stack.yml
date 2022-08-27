@@ -168,7 +168,7 @@
           Owner: DevOps Team
         exact_count: 1
         count_tag:
-          Name: "vpro_ansible_db01"
+          Name: "vpro_ansible_rdb01"
           Project: vprofile
           Owner: DevOps Team
         group_id: "{{vproStackSG_out.group_id}}"
