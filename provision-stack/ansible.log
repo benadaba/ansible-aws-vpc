@@ -1,0 +1,248 @@
+2022-08-29 18:14:43,730 p=2138 u=ubuntu n=ansible | [WARNING]:  * Failed to parse /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it
+should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2022-08-29 18:14:43,730 p=2138 u=ubuntu n=ansible | [WARNING]:  * Failed to parse /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro with ini plugin: /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro:2: Expected key=value host variable assignment, got:
+ansible_host
+
+2022-08-29 18:14:43,730 p=2138 u=ubuntu n=ansible | [WARNING]: Unable to parse /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro as an inventory source
+
+2022-08-29 18:14:43,731 p=2138 u=ubuntu n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-08-29 18:14:43,739 p=2138 u=ubuntu n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2022-08-29 18:14:44,034 p=2138 u=ubuntu n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] **********
+2022-08-29 18:14:44,056 p=2138 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2022-08-29 18:14:45,411 p=2138 u=ubuntu n=ansible | ok: [localhost]
+2022-08-29 18:14:45,436 p=2138 u=ubuntu n=ansible | TASK [Install  jdk, maven, git] ************************************************
+2022-08-29 18:14:56,150 p=2138 u=ubuntu n=ansible | ok: [localhost] => (item=git)
+2022-08-29 18:15:34,832 p=2138 u=ubuntu n=ansible | changed: [localhost] => (item=openjdk-8-jdk)
+2022-08-29 18:15:44,633 p=2138 u=ubuntu n=ansible | changed: [localhost] => (item=maven)
+2022-08-29 18:15:44,654 p=2138 u=ubuntu n=ansible | TASK [Clone source code from github] *******************************************
+2022-08-29 18:15:50,499 p=2138 u=ubuntu n=ansible | changed: [localhost]
+2022-08-29 18:15:50,517 p=2138 u=ubuntu n=ansible | TASK [mvn install command to build artifact] ***********************************
+2022-08-29 18:16:31,402 p=2138 u=ubuntu n=ansible | changed: [localhost]
+2022-08-29 18:16:31,428 p=2138 u=ubuntu n=ansible | TASK [Copy artifacts to files directory] ***************************************
+2022-08-29 18:16:32,582 p=2138 u=ubuntu n=ansible | changed: [localhost] => (item=/home/ubuntu/ansible-aws-vpc/provision-stack/Vprofile-repo/target/vprofile-v2.war)
+2022-08-29 18:16:32,598 p=2138 u=ubuntu n=ansible | TASK [Copy SQL file to files directory] ****************************************
+2022-08-29 18:16:33,044 p=2138 u=ubuntu n=ansible | changed: [localhost]
+2022-08-29 18:16:33,070 p=2138 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-08-29 18:16:33,071 p=2138 u=ubuntu n=ansible | localhost                  : ok=6    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 18:46:23,406 p=7089 u=ubuntu n=ansible | [WARNING]:  * Failed to parse /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it
+should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2022-08-29 18:46:23,406 p=7089 u=ubuntu n=ansible | [WARNING]:  * Failed to parse /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro with ini plugin: /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro:2: Expected key=value host variable assignment, got:
+ansible_host
+
+2022-08-29 18:46:23,406 p=7089 u=ubuntu n=ansible | [WARNING]: Unable to parse /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro as an inventory source
+
+2022-08-29 18:46:23,407 p=7089 u=ubuntu n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-08-29 18:46:23,415 p=7089 u=ubuntu n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2022-08-29 18:46:23,781 p=7089 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ***
+2022-08-29 18:46:23,782 p=7089 u=ubuntu n=ansible | skipping: no hosts matched
+2022-08-29 18:46:23,782 p=7089 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-08-29 18:52:46,644 p=7112 u=ubuntu n=ansible | [WARNING]:  * Failed to parse /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it
+should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2022-08-29 18:52:46,645 p=7112 u=ubuntu n=ansible | [WARNING]:  * Failed to parse /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro with ini plugin: /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro:2: Expected key=value host variable assignment, got:
+ansible_host
+
+2022-08-29 18:52:46,645 p=7112 u=ubuntu n=ansible | [WARNING]: Unable to parse /home/ubuntu/ansible-aws-vpc/provision-
+stack/inventory-vpro as an inventory source
+
+2022-08-29 18:52:46,645 p=7112 u=ubuntu n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-08-29 18:52:46,650 p=7112 u=ubuntu n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2022-08-29 18:52:46,814 p=7112 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ***
+2022-08-29 18:52:46,815 p=7112 u=ubuntu n=ansible | skipping: no hosts matched
+2022-08-29 18:52:46,815 p=7112 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-08-29 19:08:20,565 p=7167 u=ubuntu n=ansible | [WARNING]:  * Failed to parse /home/ubuntu/ansible-aws-vpc/provision-stack/inventory-vpro with yaml plugin:
+YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2022-08-29 19:08:20,565 p=7167 u=ubuntu n=ansible | [WARNING]:  * Failed to parse /home/ubuntu/ansible-aws-vpc/provision-stack/inventory-vpro with ini plugin:
+/home/ubuntu/ansible-aws-vpc/provision-stack/inventory-vpro:2: Expected key=value host variable assignment,
+got: ansible_host
+
+2022-08-29 19:08:20,566 p=7167 u=ubuntu n=ansible | [WARNING]: Unable to parse /home/ubuntu/ansible-aws-vpc/provision-stack/inventory-vpro as an inventory source
+
+2022-08-29 19:08:20,566 p=7167 u=ubuntu n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-08-29 19:08:20,570 p=7167 u=ubuntu n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does
+not match 'all'
+
+2022-08-29 19:08:20,732 p=7167 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ****************************
+2022-08-29 19:08:20,732 p=7167 u=ubuntu n=ansible | skipping: no hosts matched
+2022-08-29 19:08:20,732 p=7167 u=ubuntu n=ansible | PLAY RECAP ****************************************************************************************************
+2022-08-29 19:10:50,693 p=7189 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ****************************
+2022-08-29 19:10:50,715 p=7189 u=ubuntu n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2022-08-29 19:10:52,564 p=7189 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:11:36,899 p=7189 u=ubuntu n=ansible | fatal: [web01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.135 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:11:36,931 p=7189 u=ubuntu n=ansible | fatal: [app01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.50 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:11:36,987 p=7189 u=ubuntu n=ansible | fatal: [rmq01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.115 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:11:37,015 p=7189 u=ubuntu n=ansible | fatal: [mc01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.121 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:11:38,647 p=7189 u=ubuntu n=ansible | fatal: [db01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.38 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:11:38,674 p=7189 u=ubuntu n=ansible | TASK [Import VPC setup Variable] ******************************************************************************
+2022-08-29 19:11:38,694 p=7189 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:11:38,708 p=7189 u=ubuntu n=ansible | TASK [Update hosts file for all the hosts] ********************************************************************
+2022-08-29 19:11:39,093 p=7189 u=ubuntu n=ansible | changed: [cntl]
+2022-08-29 19:11:39,119 p=7189 u=ubuntu n=ansible | PLAY RECAP ****************************************************************************************************
+2022-08-29 19:11:39,119 p=7189 u=ubuntu n=ansible | app01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:11:39,120 p=7189 u=ubuntu n=ansible | cntl                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:11:39,120 p=7189 u=ubuntu n=ansible | db01                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:11:39,120 p=7189 u=ubuntu n=ansible | mc01                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:11:39,120 p=7189 u=ubuntu n=ansible | rmq01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:11:39,120 p=7189 u=ubuntu n=ansible | web01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:19:49,697 p=7368 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ****************************
+2022-08-29 19:19:49,711 p=7368 u=ubuntu n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2022-08-29 19:19:50,997 p=7368 u=ubuntu n=ansible | fatal: [web01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ubuntu@172.20.4.135: Permission denied (publickey).", "unreachable": true}
+2022-08-29 19:19:51,059 p=7368 u=ubuntu n=ansible | fatal: [app01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ubuntu@172.20.4.50: Permission denied (publickey).", "unreachable": true}
+2022-08-29 19:19:51,123 p=7368 u=ubuntu n=ansible | fatal: [rmq01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ubuntu@172.20.4.115: Permission denied (publickey).", "unreachable": true}
+2022-08-29 19:19:51,169 p=7368 u=ubuntu n=ansible | fatal: [mc01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ubuntu@172.20.4.121: Permission denied (publickey).", "unreachable": true}
+2022-08-29 19:19:51,603 p=7368 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:19:52,235 p=7368 u=ubuntu n=ansible | fatal: [db01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ubuntu@172.20.4.38: Permission denied (publickey).", "unreachable": true}
+2022-08-29 19:19:52,261 p=7368 u=ubuntu n=ansible | TASK [Import VPC setup Variable] ******************************************************************************
+2022-08-29 19:19:52,282 p=7368 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:19:52,296 p=7368 u=ubuntu n=ansible | TASK [Update hosts file for all the hosts] ********************************************************************
+2022-08-29 19:19:52,674 p=7368 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:19:52,699 p=7368 u=ubuntu n=ansible | PLAY RECAP ****************************************************************************************************
+2022-08-29 19:19:52,700 p=7368 u=ubuntu n=ansible | app01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:19:52,700 p=7368 u=ubuntu n=ansible | cntl                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:19:52,700 p=7368 u=ubuntu n=ansible | db01                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:19:52,700 p=7368 u=ubuntu n=ansible | mc01                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:19:52,701 p=7368 u=ubuntu n=ansible | rmq01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:19:52,701 p=7368 u=ubuntu n=ansible | web01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:29:29,728 p=7936 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ******************
+2022-08-29 19:29:29,742 p=7936 u=ubuntu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2022-08-29 19:29:31,840 p=7936 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:29:32,375 p=7936 u=ubuntu n=ansible | ok: [web01]
+2022-08-29 19:29:32,665 p=7936 u=ubuntu n=ansible | ok: [mc01]
+2022-08-29 19:29:32,689 p=7936 u=ubuntu n=ansible | ok: [app01]
+2022-08-29 19:29:32,757 p=7936 u=ubuntu n=ansible | ok: [rmq01]
+2022-08-29 19:29:33,940 p=7936 u=ubuntu n=ansible | ok: [db01]
+2022-08-29 19:29:33,966 p=7936 u=ubuntu n=ansible | TASK [Import VPC setup Variable] ********************************************************************
+2022-08-29 19:29:34,040 p=7936 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:29:34,080 p=7936 u=ubuntu n=ansible | ok: [web01]
+2022-08-29 19:29:34,124 p=7936 u=ubuntu n=ansible | ok: [app01]
+2022-08-29 19:29:34,164 p=7936 u=ubuntu n=ansible | ok: [rmq01]
+2022-08-29 19:29:34,173 p=7936 u=ubuntu n=ansible | ok: [mc01]
+2022-08-29 19:29:34,192 p=7936 u=ubuntu n=ansible | ok: [db01]
+2022-08-29 19:29:34,206 p=7936 u=ubuntu n=ansible | TASK [Update hosts file for all the hosts] **********************************************************
+2022-08-29 19:29:35,104 p=7936 u=ubuntu n=ansible | changed: [rmq01]
+2022-08-29 19:29:35,107 p=7936 u=ubuntu n=ansible | changed: [mc01]
+2022-08-29 19:29:35,108 p=7936 u=ubuntu n=ansible | changed: [web01]
+2022-08-29 19:29:35,108 p=7936 u=ubuntu n=ansible | changed: [app01]
+2022-08-29 19:29:35,175 p=7936 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:29:35,440 p=7936 u=ubuntu n=ansible | changed: [db01]
+2022-08-29 19:29:35,468 p=7936 u=ubuntu n=ansible | PLAY RECAP ******************************************************************************************
+2022-08-29 19:29:35,468 p=7936 u=ubuntu n=ansible | app01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:29:35,468 p=7936 u=ubuntu n=ansible | cntl                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:29:35,468 p=7936 u=ubuntu n=ansible | db01                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:29:35,468 p=7936 u=ubuntu n=ansible | mc01                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:29:35,469 p=7936 u=ubuntu n=ansible | rmq01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:29:35,469 p=7936 u=ubuntu n=ansible | web01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:31:52,079 p=8216 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ******************
+2022-08-29 19:31:52,093 p=8216 u=ubuntu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2022-08-29 19:31:53,812 p=8216 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:32:38,259 p=8216 u=ubuntu n=ansible | fatal: [web01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.135 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:32:38,315 p=8216 u=ubuntu n=ansible | fatal: [app01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.50 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:32:38,355 p=8216 u=ubuntu n=ansible | fatal: [rmq01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.115 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:32:38,395 p=8216 u=ubuntu n=ansible | fatal: [mc01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.121 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:32:39,903 p=8216 u=ubuntu n=ansible | fatal: [db01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.38 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:32:39,930 p=8216 u=ubuntu n=ansible | TASK [Import VPC setup Variable] ********************************************************************
+2022-08-29 19:32:39,950 p=8216 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:32:39,964 p=8216 u=ubuntu n=ansible | TASK [Update hosts file for all the hosts] **********************************************************
+2022-08-29 19:32:40,374 p=8216 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:32:40,400 p=8216 u=ubuntu n=ansible | PLAY RECAP ******************************************************************************************
+2022-08-29 19:32:40,401 p=8216 u=ubuntu n=ansible | app01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:32:40,401 p=8216 u=ubuntu n=ansible | cntl                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:32:40,401 p=8216 u=ubuntu n=ansible | db01                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:32:40,401 p=8216 u=ubuntu n=ansible | mc01                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:32:40,401 p=8216 u=ubuntu n=ansible | rmq01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:32:40,401 p=8216 u=ubuntu n=ansible | web01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:32:48,149 p=8366 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ******************
+2022-08-29 19:32:48,163 p=8366 u=ubuntu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2022-08-29 19:32:49,872 p=8366 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:33:34,331 p=8366 u=ubuntu n=ansible | fatal: [web01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.135 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:33:34,411 p=8366 u=ubuntu n=ansible | fatal: [app01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.50 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:33:34,447 p=8366 u=ubuntu n=ansible | fatal: [rmq01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.115 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:33:34,479 p=8366 u=ubuntu n=ansible | fatal: [mc01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.121 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:33:35,959 p=8366 u=ubuntu n=ansible | fatal: [db01]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.20.4.38 port 22: Connection timed out", "unreachable": true}
+2022-08-29 19:33:35,985 p=8366 u=ubuntu n=ansible | TASK [Import VPC setup Variable] ********************************************************************
+2022-08-29 19:33:36,006 p=8366 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:33:36,021 p=8366 u=ubuntu n=ansible | TASK [Update hosts file for all the hosts] **********************************************************
+2022-08-29 19:33:36,403 p=8366 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:33:36,429 p=8366 u=ubuntu n=ansible | PLAY RECAP ******************************************************************************************
+2022-08-29 19:33:36,429 p=8366 u=ubuntu n=ansible | app01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:33:36,429 p=8366 u=ubuntu n=ansible | cntl                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:33:36,430 p=8366 u=ubuntu n=ansible | db01                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:33:36,430 p=8366 u=ubuntu n=ansible | mc01                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:33:36,430 p=8366 u=ubuntu n=ansible | rmq01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:33:36,430 p=8366 u=ubuntu n=ansible | web01                      : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:34:38,817 p=8516 u=ubuntu n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ******************
+2022-08-29 19:34:38,831 p=8516 u=ubuntu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2022-08-29 19:34:40,652 p=8516 u=ubuntu n=ansible | ok: [web01]
+2022-08-29 19:34:40,810 p=8516 u=ubuntu n=ansible | ok: [rmq01]
+2022-08-29 19:34:40,828 p=8516 u=ubuntu n=ansible | ok: [app01]
+2022-08-29 19:34:40,863 p=8516 u=ubuntu n=ansible | ok: [mc01]
+2022-08-29 19:34:41,116 p=8516 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:34:42,366 p=8516 u=ubuntu n=ansible | ok: [db01]
+2022-08-29 19:34:42,389 p=8516 u=ubuntu n=ansible | TASK [Import VPC setup Variable] ********************************************************************
+2022-08-29 19:34:42,460 p=8516 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:34:42,504 p=8516 u=ubuntu n=ansible | ok: [web01]
+2022-08-29 19:34:42,544 p=8516 u=ubuntu n=ansible | ok: [app01]
+2022-08-29 19:34:42,584 p=8516 u=ubuntu n=ansible | ok: [rmq01]
+2022-08-29 19:34:42,591 p=8516 u=ubuntu n=ansible | ok: [mc01]
+2022-08-29 19:34:42,611 p=8516 u=ubuntu n=ansible | ok: [db01]
+2022-08-29 19:34:42,626 p=8516 u=ubuntu n=ansible | TASK [Update hosts file for all the hosts] **********************************************************
+2022-08-29 19:34:43,528 p=8516 u=ubuntu n=ansible | ok: [app01]
+2022-08-29 19:34:43,530 p=8516 u=ubuntu n=ansible | ok: [rmq01]
+2022-08-29 19:34:43,531 p=8516 u=ubuntu n=ansible | ok: [mc01]
+2022-08-29 19:34:43,535 p=8516 u=ubuntu n=ansible | ok: [web01]
+2022-08-29 19:34:43,601 p=8516 u=ubuntu n=ansible | ok: [cntl]
+2022-08-29 19:34:43,871 p=8516 u=ubuntu n=ansible | ok: [db01]
+2022-08-29 19:34:43,898 p=8516 u=ubuntu n=ansible | PLAY RECAP ******************************************************************************************
+2022-08-29 19:34:43,898 p=8516 u=ubuntu n=ansible | app01                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:34:43,899 p=8516 u=ubuntu n=ansible | cntl                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:34:43,899 p=8516 u=ubuntu n=ansible | db01                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:34:43,899 p=8516 u=ubuntu n=ansible | mc01                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:34:43,899 p=8516 u=ubuntu n=ansible | rmq01                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:34:43,900 p=8516 u=ubuntu n=ansible | web01                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-29 19:37:42,470 p=8770 u=ubuntu n=ansible | PLAY [Setup Mysql with accounts db and remote login] ***************************
+2022-08-29 19:37:42,493 p=8770 u=ubuntu n=ansible | TASK [Installing Mysql Service and dependencies] *******************************
+2022-08-29 19:38:06,951 p=8770 u=ubuntu n=ansible | changed: [db01] => (item=mysql-server)
+2022-08-29 19:38:11,839 p=8770 u=ubuntu n=ansible | changed: [db01] => (item=mysql-client)
+2022-08-29 19:38:18,868 p=8770 u=ubuntu n=ansible | changed: [db01] => (item=python-mysqldb)
+2022-08-29 19:38:23,167 p=8770 u=ubuntu n=ansible | changed: [db01] => (item=python3-mysqldb)
+2022-08-29 19:38:37,195 p=8770 u=ubuntu n=ansible | changed: [db01] => (item=libmysqlclient-dev)
+2022-08-29 19:38:37,209 p=8770 u=ubuntu n=ansible | TASK [Start and enable mysql service] ******************************************
+2022-08-29 19:38:38,554 p=8770 u=ubuntu n=ansible | ok: [db01]
+2022-08-29 19:38:38,566 p=8770 u=ubuntu n=ansible | TASK [creating mysql user] *****************************************************
+2022-08-29 19:38:39,101 p=8770 u=ubuntu n=ansible | changed: [db01]
+2022-08-29 19:38:39,112 p=8770 u=ubuntu n=ansible | TASK [Creating accounts DB] ****************************************************
+2022-08-29 19:38:39,598 p=8770 u=ubuntu n=ansible | changed: [db01]
+2022-08-29 19:38:39,608 p=8770 u=ubuntu n=ansible | TASK [Enable remote login to mysql svc] ****************************************
+2022-08-29 19:38:40,070 p=8770 u=ubuntu n=ansible | changed: [db01]
+2022-08-29 19:38:40,082 p=8770 u=ubuntu n=ansible | RUNNING HANDLER [Restart mysql] ************************************************
+2022-08-29 19:38:42,742 p=8770 u=ubuntu n=ansible | changed: [db01]
+2022-08-29 19:38:42,754 p=8770 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2022-08-29 19:38:42,754 p=8770 u=ubuntu n=ansible | db01                       : ok=6    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
